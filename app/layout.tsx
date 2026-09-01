@@ -18,7 +18,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://trinitryhomestay.com"),
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.ico",
   },
   title: {
     default: "Trinitry Home Stay | Suryanelli, Munnar",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Trinitry Home Stay",
     images: [
       {
-        url: "/image-4.png",
+        url: "/favicon.png",
         width: 1200,
         height: 630,
         alt: "Trinitry Home Stay in Suryanelli, Munnar, Kerala",
