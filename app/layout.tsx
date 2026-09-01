@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Trinitry Home Stay",
     images: [
       {
-        url: "/favicon.png",
+        url: "/favicon.ico",
         width: 1200,
         height: 630,
         alt: "Trinitry Home Stay in Suryanelli, Munnar, Kerala",
