@@ -2,7 +2,6 @@
 
 import { motion, useScroll, useTransform, type Variants } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import LoadingImage from "@/components/shared/LoadingImage";
 import usePageReady from "@/hooks/usePageReady";
 
 const heroTextContainerVariants: Variants = {
@@ -19,7 +18,7 @@ const heroTextItemVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 28,
-    filter: "blur(6px)",
+    filter: "blur(0px)",
   },
   visible: {
     opacity: 1,
@@ -45,18 +44,20 @@ const Hero = () => {
       <motion.div
         className="absolute inset-0"
         initial={false}
-        animate={{ scale: isPageReady ? 1 : 1.2 }}
+        animate={{ scale: isPageReady ? 1 : 1.05 }}
         transition={{ duration: 1.75, ease: "easeOut" }}
       >
-        <LoadingImage
-          src="/image-4.png"
-          alt="Trinitry Home Stay Munnar"
-          fill
-          preload
-          wrapperClassName="absolute inset-0"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-[0px]" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover"
+        >
+          <source src="/bg-video.mp4" type="video/mp4" />
+        </video>
+        {/* Dark black background overlay for clear text visibility */}
+        <div className="absolute inset-0 bg-black/55 backdrop-blur-[0.5px]" />
       </motion.div>
 
       <div className="relative z-10 px-4 text-center text-white">

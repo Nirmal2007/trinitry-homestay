@@ -26,7 +26,7 @@ const rooms: Room[] = [
     price: "₹1,399",
     originalPrice: "₹2,500",
     occupancy: "2 Guests",
-    image: "/deluxe-suite.jpg",
+    image: "/deluxe-suite-new.jpg",
     description:
       "Spacious glass-walled offering breathtaking views of Munnar's green tea slopes and morning valley mist.",
     amenities: [
